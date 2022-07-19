@@ -21,4 +21,9 @@ public class MainActivity extends AppCompatActivity {
         //iniciar la actividad
         startActivity(i);
     }
+
+    //salir de la app
+    public void salir_app(View vista){
+        finish();
+    }
 }
