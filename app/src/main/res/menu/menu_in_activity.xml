@@ -1,16 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity">
 
+    <!--Orden de los iconos-->
+
     <item android:id="@+id/configuracion"
-        android:title="Configuración"></item>
+        android:title="Configuración"
+        android:icon="@android:drawable/ic_menu_preferences"
+        app:showAsAction="never"></item>
 
     <item
         android:id="@+id/info"
-        android:title="Información"></item>
+        android:title="Información"
+        android:icon="@android:drawable/ic_menu_info_details"
+
+        android:orderInCategory="5"
+        app:showAsAction="ifRoom"></item>
+
+    <item android:id="@+id/menu_buscar"
+        android:title="Buscar"
+        android:icon="@android:drawable/ic_menu_search"
+        android:orderInCategory="10"
+        app:showAsAction="always"></item>
 
     <item android:id="@+id/salir"
-        android:title="Salir"></item>
+        android:title="Salir"
+        android:icon="@android:drawable/ic_menu_close_clear_cancel"
+        app:showAsAction="never"></item>
 
 </menu>
